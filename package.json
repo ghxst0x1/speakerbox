@@ -1,0 +1,24 @@
+{
+  "name": "speakerbox",
+  "version": "1.0.0",
+  "description": "GhxsT#0704's personal discord bot",
+  "main": "index.js",
+  "scripts": {
+    "log": "index.js > log.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "discord-api-types": "^0.37.3",
+    "discord-player": "^5.3.1",
+    "discord.js": "^14.2.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.0.2",
+    "opusscript": "^0.0.8",
+    "play-dl": "^1.9.5"
+  }
+}

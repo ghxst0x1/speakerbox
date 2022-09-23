@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { Client, GuildMember, GatewayIntentBits } = require("discord.js");
+const { Client, GuildMember, GatewayIntentBits, ActivityType } = require("discord.js");
 const { Player, QueryType, QueueRepeatMode } = require("discord-player");
 const client = new Client({
     intents: [
@@ -12,10 +12,14 @@ const express = require("express");
 
 client.on("ready", () => {
     console.log("Bot is online!");
-    client.user.setActivity({
-        name: "Moosiq Dead and i killed him😼",
-        type: "PLAYING"
-    });
+    // client.user.setActivity({
+    //     name: "Moosiq Dead and i killed him😼",
+    //     type: "PLAYING"
+    // });
+    client.user.setPresence({
+        activities: [{ name: `Moosiq Dead and i killed him😼`, type: ActivityType.Watching }],
+        status: 'dnd',
+      });
 });
 client.on("error", console.error);
 client.on("warn", console.warn);

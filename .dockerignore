@@ -1,0 +1,9 @@
+.git/
+node_modules/
+.gitignore
+Dockerfile
+.dockerignore
+.replit
+replit.nix
+package-lock.json
+README.md

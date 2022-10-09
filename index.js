@@ -9,7 +9,7 @@ const client = new Client({
     ]
 });
 const express = require("express");
-const timestamp = Date();
+const timestamp = Date().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'});
 
 client.on("ready", () => {
     console.log(timestamp,"Bot is online!");

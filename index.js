@@ -9,9 +9,10 @@ const client = new Client({
     ]
 });
 const express = require("express");
+const timestamp = Date();
 
 client.on("ready", () => {
-    console.log("Bot is online!");
+    console.log(timestamp,"Bot is online!");
     // client.user.setActivity({
     //     name: "Moosiq Dead and i killed him😼",
     //     type: "PLAYING"
@@ -30,7 +31,7 @@ const port = process.env.PORT || 3001;
 
 app.get('/', (req, res) => res.send('SpeakerBox Active!'));
 
-app.listen(port, () => console.log(`SpeakerBox is listening at http://localhost:${port}`));
+app.listen(port, () => console.log(timestamp,`SpeakerBox is listening at http://localhost:${port}`));
 
 // instantiate the player
 const player = new Player(client, {
@@ -46,10 +47,10 @@ const player = new Player(client, {
 });
 
 player.on("error", (queue, error) => {
-    console.log(`[${queue.guild.name}] Error emitted from the queue: ${error.message}`);
+    console.log(timestamp,`[${queue.guild.name}] Error emitted from the queue: ${error.message}`);
 });
 player.on("connectionError", (queue, error) => {
-    console.log(`[${queue.guild.name}] Error emitted from the connection: ${error.message}`);
+    console.log(timestamp,`[${queue.guild.name}] Error emitted from the connection: ${error.message}`);
 });
 
 player.on("trackStart", (queue, track) => {

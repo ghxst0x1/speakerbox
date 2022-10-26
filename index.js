@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { Client, GuildMember, GatewayIntentBits, ActivityType } = require("discord.js");
 const { Player, QueryType, QueueRepeatMode } = require("discord-player");
+var moment = require("moment-timezone");
 const client = new Client({
     intents: [
       GatewayIntentBits.Guilds,
@@ -9,7 +10,8 @@ const client = new Client({
     ]
 });
 const express = require("express");
-const timestamp = Date().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'});
+// const timestamp = Date().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'});
+const timestamp = moment().tz("Asia/Kolkata").format('MMMM Do YYYY, h:mm:ss a');
 
 client.on("ready", () => {
     console.log(timestamp,"Bot is online!");

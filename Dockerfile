@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:alpine
 
 # Create the bot's directory
 RUN mkdir -p /usr/src/bot
@@ -10,4 +10,4 @@ RUN npm install
 COPY . /usr/src/bot
 
 # Start the bot.
-CMD ["node", "index.js"]
+CMD ["node", "src/bot.js"]

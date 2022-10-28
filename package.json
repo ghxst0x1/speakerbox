@@ -2,9 +2,9 @@
   "name": "speakerbox",
   "version": "1.0.0",
   "description": "GhxsT#0704's personal discord bot",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "log": "index.js > log.txt"
+    "log": "src/index.js > log.txt"
   },
   "keywords": [],
   "author": "",

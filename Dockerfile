@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:latest
 
 # Create the bot's directory
 RUN mkdir -p /usr/src/bot

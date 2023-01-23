@@ -26,7 +26,8 @@ client.on("ready", () => {
   // });
   client.user.setPresence({
     activities: [
-      { name: `Moosiq Dead and i killed him😼`, type: ActivityType.Watching },
+      //{ name: `Moosiq Dead and i killed him😼`, type: ActivityType.Watching },
+	{ name: `Why am i still here... Just to suffer.`, type: ActivityType.Playing },
     ],
     status: "dnd",
   });

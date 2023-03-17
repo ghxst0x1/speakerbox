@@ -24,13 +24,14 @@ client.on("ready", () => {
   //     name: "Moosiq Dead and i killed him😼",
   //     type: "PLAYING"
   // });
-  client.user.setPresence({
-    activities: [
+  //client.user.setPresence({
+  //  activities: [
       //{ name: `Moosiq Dead and i killed him😼`, type: ActivityType.Watching },
-	{ name: `Why am i still here... Just to suffer.`, type: ActivityType.Playing },
-    ],
-    status: "dnd",
-  });
+//	{ name: `Why am i still here... Just to suffer.`, type: ActivityType.Playing },
+    //],
+  //  status: "dnd",
+//  });
+	client.user.setPresence({activities: [{name: `Why am i not dead??!!!`}], status: 'online'});
 });
 client.on("error", console.error);
 client.on("warn", console.warn);

@@ -4,6 +4,6 @@ module.exports = async (client) => {
   );
   client.user.setPresence({
     activities: [{ name: `Why am i not dead??!!!` }],
-    status: "online",
+    status: "idle",
   });
 };

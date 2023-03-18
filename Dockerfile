@@ -1,4 +1,5 @@
-FROM node:18-alpine
+#FROM node:18-alpine
+FROM node:19.7.0-bullseye-slim
 
 # Create the bot's directory
 RUN mkdir -p /usr/src/bot

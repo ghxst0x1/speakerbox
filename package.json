@@ -5,7 +5,8 @@
   "main": "src/bot.js",
   "scripts": {
     "start": "node src/bot.js",
-    "log": "src/bot.js > log.txt"
+    "log": "src/bot.js > log.txt",
+    "dev": "nodemon src/bot.js"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +21,8 @@
     "express": "^4.18.2",
     "ffmpeg-static": "^5.1.0",
     "play-dl": "^1.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
   }
 }

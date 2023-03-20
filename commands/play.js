@@ -1,5 +1,5 @@
 const { QueryType } = require("discord-player");
-const { ApplicationCommandOptionType } = require("discord.js");
+const { ApplicationCommandOptionType, EmbedBuilder } = require("discord.js");
 const MAX_NUMBER_OF_CHOICES = 10;
 
 module.exports = {
@@ -76,5 +76,21 @@ module.exports = {
         if (!queue.node.isPlaying()) await queue.node.play();
         message.delete();
       });
+
+    if (result.playlist) {
+      const embed = new EmbedBuilder()
+        .setURL(result._data.playlist.url)
+        .setTitle(result._data.playlist.title)
+        .setThumbnail(
+          result._data.playlist.thumbnail.url ?? result._data.playlist.thumbnail
+        )
+        .addFields({
+          name: "New Playlist Added! ✅",
+          value: `${result._data.tracks.length} song(s) have been added to queue`,
+        })
+        .setColor("#e6cc00");
+
+      queue.metadata.channel.send({ embeds: [embed] });
+    }
   },
 };

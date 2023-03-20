@@ -65,7 +65,7 @@ module.exports = {
         time: 60000,
         disableButtons: true,
         fastSkip: true,
-        pageTravel: true,
+        // pageTravel: true,
         buttons: [
           {
             value: ButtonTypes.previous,

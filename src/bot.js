@@ -26,4 +26,5 @@ require("./cmdhandler");
 
 client.login(process.env.TOKEN).then(() => {
   require("../keep_alive");
+  console.log("Using ", process.env.DP_FORCE_YTDL_MOD);
 });

@@ -1,6 +1,6 @@
 {
   "name": "speakerbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GhxsT#0704's personal discord bot",
   "main": "src/bot.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "log": "src/bot.js > log.txt",
     "dev": "nodemon src/bot.js"
   },
-  "keywords": [],
+  "keywords": ["speakerbox","bot"],
   "author": "",
   "license": "ISC",
   "dependencies": {

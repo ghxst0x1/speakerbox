@@ -1,7 +1,6 @@
 module.exports = {
   name: "ping",
   description: "Pings the bot",
-  voiceChannel: true,
 
   async execute({ interaction }) {
     await interaction.deferReply();

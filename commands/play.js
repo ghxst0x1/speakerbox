@@ -18,6 +18,7 @@ module.exports = {
 
   async autocomplete({ interaction }) {
     const query = interaction.options.getString("song", true);
+    if (!query) return [];
     const results = await player.search(query);
 
     return interaction.respond(

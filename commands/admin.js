@@ -5,7 +5,7 @@ module.exports = {
   async execute({ interaction }) {
     await interaction.deferReply();
 
-    if (process.env.CREATER_ID.includes(interaction.user.id)) {
+    if (process.env.CREATOR_ID == interaction.user.id) {
       const depens = player.scanDeps();
       await interaction.followUp({
         embeds: [

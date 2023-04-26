@@ -19,8 +19,9 @@ global.player = new Player(client, {
     quality: "highestaudio",
     highWaterMark: 1 << 25,
   },
+  // autoRegisterExtractor: false
 });
-
+// await player.extractors.loadDefault();
 require("../player/playerEvents");
 require("./cmdhandler");
 

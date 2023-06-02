@@ -1,1 +1,2 @@
 # speakerbox
+Discord Music Bot

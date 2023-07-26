@@ -15,10 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@devraelfreeze/discordjs-pagination": "^2.7.5",
-    "@discord-player/extractor": "4.3.1",
+    "@devraelfreeze/discordjs-pagination": "^2.7.6",
+    "@discord-player/extractor": "4.4.0",
     "@discordjs/opus": "^0.9.0",
-    "discord-player": "^6.5.0",
+    "discord-player": "^6.6.1",
     "discord.js": "^14.11.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
@@ -26,6 +26,6 @@
     "play-dl": "^1.9.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.1"
   }
 }

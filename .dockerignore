@@ -7,3 +7,4 @@ Dockerfile
 replit.nix
 README.md
 old
+package-lock.json
